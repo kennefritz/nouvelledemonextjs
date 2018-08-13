@@ -564,12 +564,12 @@ var Header = function Header(props) {
       fileName: _jsxFileName,
       lineNumber: 7
     }
-  }, "Forty"), " ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("span", {
+  }, "DEMO"), " ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("span", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
     }
-  }, "by HTML5 UP"))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("nav", {
+  }, "NextJs"))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("nav", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
@@ -693,7 +693,7 @@ function (_React$Component) {
           fileName: _jsxFileName,
           lineNumber: 41
         }
-      }, "Next.js Starter"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("meta", {
+      }, "Demo NextJs"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("meta", {
         name: "description",
         content: "Next.js Starter - Forty",
         __source: {
@@ -830,7 +830,7 @@ var Menu = function Menu(props) {
       lineNumber: 9
     }
   }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_next_link___default.a, {
-    href: "/landing",
+    href: "/inscription",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
@@ -846,79 +846,23 @@ var Menu = function Menu(props) {
       fileName: _jsxFileName,
       lineNumber: 9
     }
-  }, "Landing")))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_next_link___default.a, {
-    href: "/generic",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("span", {
-    onClick: props.onToggleMenu,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    }
-  }, "Generic")))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_next_link___default.a, {
-    href: "/elements",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("span", {
-    onClick: props.onToggleMenu,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    }
-  }, "Elements"))))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("ul", {
+  }, "Sing up"))))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("ul", {
     className: "actions vertical",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 11
     }
   }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
-    href: "#",
-    className: "button special fit",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    }
-  }, "Get Started")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 12
     }
   }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
     href: "#",
     className: "button fit",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 12
     }
   }, "Log In")))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
     className: "close",
@@ -926,7 +870,7 @@ var Menu = function Menu(props) {
     href: "javascript:;",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 15
     }
   }, "Close"));
 };
