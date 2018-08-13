@@ -1,10 +1,62 @@
-module.exports = {
-  webpack: config => {
-    // Fixes npm packages that depend on `fs` module
-    config.node = {
-      fs: 'empty'
-    }
+const path = require('path')
+const glob = require('glob')
+const cssnano = require('cssnano')
 
+module.exports = {
+  webpack: (config, { dev }) => {
+    config.module.rules.push(
+      {
+        test: /\.(css|scss)/,
+        loader: 'emit-file-loader',
+        options: {
+          name: 'dist/[path][name].[ext]',
+          postcss: [
+            cssnano({
+              autoprefixer: {
+                add: true,
+                remove: true,
+                browsers: ['last 2 versions']
+              },
+              discardComments: {
+                removeAll: true
+              },
+              discardUnused: false,
+              mergeIdents: false,
+              reduceIdents: false,
+              safe: true,
+              sourcemap: true
+            })
+          ]
+        }
+      },
+      {
+        test: /\.css$/,
+        use: ['babel-loader', 'raw-loader', 'postcss-loader']
+      },
+      {
+        test: /\.s(a|c)ss$/,
+        use: ['babel-loader', 'raw-loader', 'postcss-loader',
+          {
+            loader: 'sass-loader',
+            options: {
+              outputStyle: 'compressed', // These options are from node-sass: https://github.com/sass/node-sass
+              includePaths: ['styles', 'node_modules']
+                .map((d) => path.join(__dirname, d))
+                .map((g) => glob.sync(g))
+                .reduce((a, c) => a.concat(c), [])
+            }
+          }
+        ]
+      }
+    )
     return config
+  },
+  exportPathMap: function (defaultPathMap) {
+    return {
+      '/': { page: '/' },
+      '/landing': { page: '/landing' },
+      '/generic': { page: '/generic' },
+      '/landing': { page: '/landing' }
+    }
   }
 }

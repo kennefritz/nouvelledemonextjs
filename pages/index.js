@@ -1,91 +1,71 @@
-import React from 'react'
 import Link from 'next/link'
-import Head from '../components/head'
-import Nav from '../components/nav'
 
-const Home = () => (
-  <div>
-    <Head title="Home" />
-    <Nav />
+import Layout from '../components/Layout'
+import Banner from '../components/Banner'
 
-    <div className="hero">
-      <h1 className="title">Welcome to Next!</h1>
-      <p className="description">
-        To get started, edit <code>pages/index.js</code> and save to reload.
-      </p>
+export default () => (
+    <Layout>
+        <div>
+            <Banner />
 
-      <div className="row">
-        <Link href="https://github.com/zeit/next.js#getting-started">
-          <a className="card">
-            <h3>Getting Started &rarr;</h3>
-            <p>Learn more about Next on Github and in their examples</p>
-          </a>
-        </Link>
-        <Link href="https://open.segment.com/create-next-app">
-          <a className="card">
-            <h3>Examples &rarr;</h3>
-            <p>
-              Find other example boilerplates on the{' '}
-              <code>create-next-app</code> site
-            </p>
-          </a>
-        </Link>
-        <Link href="https://github.com/segmentio/create-next-app">
-          <a className="card">
-            <h3>Create Next App &rarr;</h3>
-            <p>Was this tool helpful? Let us know how we can improve it</p>
-          </a>
-        </Link>
-      </div>
-    </div>
+            <div id="main">
+                <section id="one" className="tiles">
+                    <article style={{backgroundImage: `url('/static/images/pic01.jpg')`}}>
+                        <header className="major">
+                            <h3>Aliquam</h3>
+                            <p>Ipsum dolor sit amet</p>
+                        </header>
+                        <Link href="/landing"><a className="link primary"></a></Link>
+                    </article>
+                    <article style={{backgroundImage: `url('/static/images/pic02.jpg')`}}>
+                        <header className="major">
+                            <h3>Tempus</h3>
+                            <p>feugiat amet tempus</p>
+                        </header>
+                        <Link href="/landing"><a className="link primary"></a></Link>
+                    </article>
+                    <article style={{backgroundImage: `url('/static/images/pic03.jpg')`}}>
+                        <header className="major">
+                            <h3>Magna</h3>
+                            <p>Lorem etiam nullam</p>
+                        </header>
+                        <Link href="/landing"><a className="link primary"></a></Link>
+                    </article>
+                    <article style={{backgroundImage: `url('/static/images/pic04.jpg')`}}>
+                        <header className="major">
+                            <h3>Ipsum</h3>
+                            <p>Nisl sed aliquam</p>
+                        </header>
+                        <Link href="/landing"><a className="link primary"></a></Link>
+                    </article>
+                    <article style={{backgroundImage: `url('/static/images/pic05.jpg')`}}>
+                        <header className="major">
+                            <h3>Consequat</h3>
+                            <p>Ipsum dolor sit amet</p>
+                        </header>
+                        <Link href="/landing"><a className="link primary"></a></Link>
+                    </article>
+                    <article style={{backgroundImage: `url('/static/images/pic06.jpg')`}}>
+                        <header className="major">
+                            <h3>Etiam</h3>
+                            <p>Feugiat amet tempus</p>
+                        </header>
+                        <Link href="/landing"><a className="link primary"></a></Link>
+                    </article>
+                </section>
+                <section id="two">
+                    <div className="inner">
+                        <header className="major">
+                            <h2>Massa libero</h2>
+                        </header>
+                        <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
+                        <ul className="actions">
+                            <li><Link href="/landing"><a className="button next">Get Started</a></Link></li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
 
-    <style jsx>{`
-      .hero {
-        width: 100%;
-        color: #333;
-      }
-      .title {
-        margin: 0;
-        width: 100%;
-        padding-top: 80px;
-        line-height: 1.15;
-        font-size: 48px;
-      }
-      .title,
-      .description {
-        text-align: center;
-      }
-      .row {
-        max-width: 880px;
-        margin: 80px auto 40px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-      }
-      .card {
-        padding: 18px 18px 24px;
-        width: 220px;
-        text-align: left;
-        text-decoration: none;
-        color: #434343;
-        border: 1px solid #9b9b9b;
-      }
-      .card:hover {
-        border-color: #067df7;
-      }
-      .card h3 {
-        margin: 0;
-        color: #067df7;
-        font-size: 18px;
-      }
-      .card p {
-        margin: 0;
-        padding: 12px 0 0;
-        font-size: 13px;
-        color: #333;
-      }
-    `}</style>
-  </div>
+        </div>
+    </Layout>
 )
-
-export default Home
